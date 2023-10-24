@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>lv1-z1</artifactId>
+    <artifactId>rpr-t1-z1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
