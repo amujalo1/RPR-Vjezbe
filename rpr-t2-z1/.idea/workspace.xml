@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7d75f0f-ce1a-408c-a6de-99ad18bb12a5" name="Changes" comment="" />
+    <list default="true" id="b7d75f0f-ce1a-408c-a6de-99ad18bb12a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +21,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2XCzsNcpoIf87PwZklZUyxTeo91" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,10 +37,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "lv2-z1",
+    "last_opened_file_path": "C:/Users/User/Documents/WorkSpace/java projects/rpr-t2-z1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/User/Documents/WorkSpace/java projects/rpr-t2-z1/src/main/java/ba/unsa/etf/rpr/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
@@ -42,7 +52,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="rpr-t2-z1" />
-      <option name="PROGRAM_PARAMETERS" value="53.3434" />
+      <option name="PROGRAM_PARAMETERS" value="53.3434 6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698148058634</updated>
       <workItem from="1698148059698" duration="563000" />
+      <workItem from="1698520730740" duration="341000" />
     </task>
     <servers />
   </component>
