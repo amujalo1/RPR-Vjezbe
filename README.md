@@ -31,9 +31,9 @@ Sada da sumiramo sve komande za jednostavnu upotrebu GIT-a:
   add - azuriranje (update) podataka koje odaberemo mozemo ih pojedinacno azurirati npr git add ime-dat ili mozemo sve      azurirati sa " .. "<br>
   commit -m - izvrsi sve naredbe koje smo poslali bashu, potrebno je dati komentar sta smo sve izvrsili<br>
   status - provjeravamo u kojoj smo grani<br>
-  checkout -b - ulazimo u postojecu ili pravimo novu granu<br> 
+  checkout -b - ulazimo u postojecu ili pravimo novu granu (-b nam nije potrebno ako grana ili branch vec postoji!)<br> 
   remote add - dodajemo link u kojoj repositoriju cemo sve ovo smjestiti<br>
-  git push -u origin  - izvrsava prebacivanje u github cloud, dodatno treba dodati naziv grane<br>
+  git push -u origin  - izvrsava prebacivanje u github cloud, dodatno treba dodati naziv grane (-u nam nije potrebno ako saljemo u vec postojeci direktoriji koji samo azuriramo!)<br>
   config --local credential.helper "" - ovo nam samo treba ako nam gresku bude izbacivalo nakon pusha<br> 
     
     
