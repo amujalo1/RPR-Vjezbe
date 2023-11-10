@@ -1,5 +1,6 @@
 package ba.unsa.etf.rpr;
 import javax.management.BadAttributeValueExpException;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -8,16 +9,17 @@ public class LaptopDaoSerializableFile implements LaptopDao{
     private ArrayList<Laptop> laptopi;
     public LaptopDaoSerializableFile(File file){
         this.file=file;
-        laptopi = new ArrayList<>();
+        laptopi = vratiPodatkeIzDatoteke();
     }
     @Override
     public void dodajLaptopUFile(Laptop laptop){
-        napuniListu(vratiPodatkeIzDatoteke());
-        laptopi.add(laptop);
+        //napuniListu(vratiPodatkeIzDatoteke());
+        //laptopi.add(laptop);
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
+            laptopi.add(laptop);
             oos.writeObject(laptopi);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Greska: " + e);
         }
     }
 
@@ -42,13 +44,13 @@ public class LaptopDaoSerializableFile implements LaptopDao{
 
     @Override
     public ArrayList<Laptop> vratiPodatkeIzDatoteke() {
-        if (file.exists()) {
+        //if (file.exists()) {
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
                 return (ArrayList<Laptop>) ois.readObject();
             } catch (IOException | ClassNotFoundException e) {
-                e.printStackTrace();
+                System.out.println("Geska: " + e);
             }
-        }
+        //}
         return new ArrayList<>();
     }
 

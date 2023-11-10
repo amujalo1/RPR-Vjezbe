@@ -1,8 +1,10 @@
 package ba.unsa.etf.rpr;
 
+import java.io.Serializable;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Laptop {
+public class Laptop implements Serializable {
     private String brend;
     private String model;
     private double cijena;
@@ -66,5 +68,20 @@ public class Laptop {
     }
     public void setSsd(int ssd){
         this.ssd = ssd;
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "brend='" + brend + '\'' +
+                ", model='" + model + '\'' +
+                ", cijena=" + cijena +
+                ", ram=" + ram +
+                ", hdd=" + hdd +
+                ", ssd=" + ssd +
+                ", procesor='" + procesor + '\'' +
+                ", grafickaKartica='" + grafickaKartica + '\'' +
+                ", velicinaEkrana=" + velicinaEkrana +
+                '}';
     }
 }

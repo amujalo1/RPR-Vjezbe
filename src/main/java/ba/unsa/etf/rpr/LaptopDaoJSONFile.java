@@ -1,36 +1,29 @@
 package ba.unsa.etf.rpr;
 
-import com.fasterxml.jackson.core.exc.StreamWriteException;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.google.gson.JsonObject;
-
+import com.fasterxml.jackson.databind.SerializationFeature;
 import javax.management.BadAttributeValueExpException;
 import java.util.ArrayList;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
-public class LaptopDaoJSONFile implements LaptopDao{
+public class LaptopDaoJSONFile implements LaptopDao  {
     private File file;
     private ArrayList<Laptop> laptopi;
 
     public LaptopDaoJSONFile(File file) {
         this.file = file;
-        laptopi = new ArrayList<>();
+        laptopi = vratiPodatkeIzDatoteke();
     }
 
     @Override
     public void dodajLaptopUFile(Laptop laptop) {
-        napuniListu(vratiPodatkeIzDatoteke());
-        laptopi.add(laptop);
+        //napuniListu(vratiPodatkeIzDatoteke());
+        //laptopi.add(laptop);
         try{
             ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            laptopi.add(laptop);
             mapper.writeValue(file, laptopi);
-        } catch (StreamWriteException e) {
-            throw new RuntimeException(e);
-        } catch (DatabindException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -58,14 +51,14 @@ public class LaptopDaoJSONFile implements LaptopDao{
 
     @Override
     public ArrayList<Laptop> vratiPodatkeIzDatoteke() {
-        if (file.exists()) {
+        //if (file.exists()) {
             try {
-                XmlMapper xmlMapper = new XmlMapper();
-                return xmlMapper.readValue(file, xmlMapper.getTypeFactory().constructCollectionType(ArrayList.class, Laptop.class));
+                ObjectMapper mapper = new ObjectMapper();
+                return mapper.readValue(file, mapper.getTypeFactory().constructCollectionType(ArrayList.class, Laptop.class));
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Geska: " + e);
             }
-        }
+        //}
         return new ArrayList<>();
     }
     }
