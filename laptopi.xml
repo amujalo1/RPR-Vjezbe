@@ -1,0 +1,57 @@
+<ArrayList>
+  <item>
+    <brend>Apple</brend>
+    <model>MackBook Pro</model>
+    <cijena>3000.0</cijena>
+    <ram>32</ram>
+    <hdd>0</hdd>
+    <ssd>2000</ssd>
+    <procesor>M2</procesor>
+    <grafickaKartica>Intel HD Graphics 530</grafickaKartica>
+    <velicinaEkrana>15.7</velicinaEkrana>
+  </item>
+  <item>
+    <brend>Lenovo</brend>
+    <model>ThinkPad X1</model>
+    <cijena>1700.0</cijena>
+    <ram>64</ram>
+    <hdd>2000</hdd>
+    <ssd>1000</ssd>
+    <procesor>Intel i7H</procesor>
+    <grafickaKartica>Nvidea RTX 3500ti</grafickaKartica>
+    <velicinaEkrana>17.5</velicinaEkrana>
+  </item>
+  <item>
+    <brend>Dell</brend>
+    <model>Longitude 5420</model>
+    <cijena>1400.0</cijena>
+    <ram>16</ram>
+    <hdd>0</hdd>
+    <ssd>256</ssd>
+    <procesor>Intel i5G</procesor>
+    <grafickaKartica>Intel Xe Graphics</grafickaKartica>
+    <velicinaEkrana>14.0</velicinaEkrana>
+  </item>
+  <item>
+    <brend>HP</brend>
+    <model>EliteBook</model>
+    <cijena>1500.0</cijena>
+    <ram>32</ram>
+    <hdd>1562</hdd>
+    <ssd>556</ssd>
+    <procesor>Intel i7G</procesor>
+    <grafickaKartica>Intel HD Graphics 530</grafickaKartica>
+    <velicinaEkrana>15.5</velicinaEkrana>
+  </item>
+  <item>
+    <brend>Asus</brend>
+    <model>F515</model>
+    <cijena>1200.0</cijena>
+    <ram>8</ram>
+    <hdd>512</hdd>
+    <ssd>0</ssd>
+    <procesor>Rayzen 3</procesor>
+    <grafickaKartica>Intel Xe Graphics</grafickaKartica>
+    <velicinaEkrana>16.3</velicinaEkrana>
+  </item>
+</ArrayList>

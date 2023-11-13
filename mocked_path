@@ -1,0 +1,13 @@
+<ArrayList>
+  <item>
+    <brend>Microsoft</brend>
+    <model>surface pro</model>
+    <cijena>1500.0</cijena>
+    <ram>16</ram>
+    <hdd>0</hdd>
+    <ssd>1024</ssd>
+    <procesor>Intel i5G</procesor>
+    <grafickaKartica>Intel Xe Graphics</grafickaKartica>
+    <velicinaEkrana>14.0</velicinaEkrana>
+  </item>
+</ArrayList>

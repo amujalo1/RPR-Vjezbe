@@ -1,0 +1,51 @@
+[ {
+  "brend" : "Apple",
+  "model" : "MackBook Pro",
+  "cijena" : 3000.0,
+  "ram" : 32,
+  "hdd" : 0,
+  "ssd" : 2000,
+  "procesor" : "M2",
+  "grafickaKartica" : "Intel HD Graphics 530",
+  "velicinaEkrana" : 15.7
+}, {
+  "brend" : "Lenovo",
+  "model" : "ThinkPad X1",
+  "cijena" : 1700.0,
+  "ram" : 64,
+  "hdd" : 2000,
+  "ssd" : 1000,
+  "procesor" : "Intel i7H",
+  "grafickaKartica" : "Nvidea RTX 3500ti",
+  "velicinaEkrana" : 17.5
+}, {
+  "brend" : "Dell",
+  "model" : "Longitude 5420",
+  "cijena" : 1400.0,
+  "ram" : 16,
+  "hdd" : 0,
+  "ssd" : 256,
+  "procesor" : "Intel i5G",
+  "grafickaKartica" : "Intel Xe Graphics",
+  "velicinaEkrana" : 14.0
+}, {
+  "brend" : "HP",
+  "model" : "EliteBook",
+  "cijena" : 1500.0,
+  "ram" : 32,
+  "hdd" : 1562,
+  "ssd" : 556,
+  "procesor" : "Intel i7G",
+  "grafickaKartica" : "Intel HD Graphics 530",
+  "velicinaEkrana" : 15.5
+}, {
+  "brend" : "Asus",
+  "model" : "F515",
+  "cijena" : 1200.0,
+  "ram" : 8,
+  "hdd" : 512,
+  "ssd" : 0,
+  "procesor" : "Rayzen 3",
+  "grafickaKartica" : "Intel Xe Graphics",
+  "velicinaEkrana" : 16.3
+} ]
