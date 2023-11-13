@@ -52,14 +52,13 @@ public class LaptopDaoJSONFile implements LaptopDao  {
     @Override
     public ArrayList<Laptop> vratiPodatkeIzDatoteke() {
         //if (file.exists()) {
-            try {
-                ObjectMapper mapper = new ObjectMapper();
-                return mapper.readValue(file, mapper.getTypeFactory().constructCollectionType(ArrayList.class, Laptop.class));
-            } catch (IOException e) {
-                System.out.println("Geska: " + e);
-            }
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(file, mapper.getTypeFactory().constructCollectionType(ArrayList.class, Laptop.class));
+        } catch (IOException e) {
+            System.out.println("Geska: " + e);
+        }
         //}
         return new ArrayList<>();
     }
-    }
-
+}

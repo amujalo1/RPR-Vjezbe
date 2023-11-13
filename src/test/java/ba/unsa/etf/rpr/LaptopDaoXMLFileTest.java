@@ -12,7 +12,7 @@ class LaptopDaoXMLFileTest {
     public void testDodajLaptopUFile() {
         File serijskiFile = new File("laptopi.xml");
         if(!serijskiFile.exists()){
-            LaptopDaoSerializableFile dao = new LaptopDaoSerializableFile(serijskiFile);
+            LaptopDaoXMLFile dao = new LaptopDaoXMLFile(serijskiFile);
             Laptop laptop1 = new Laptop(), laptop2= new Laptop(), laptop3 = new Laptop(), laptop4 = new Laptop(), laptop5 = new Laptop();
             laptop1.setBrend("Apple");
             laptop2.setBrend("Lenovo");
@@ -69,7 +69,7 @@ class LaptopDaoXMLFileTest {
     @Test
     public void testVratiPodatkeIzDatoteke() throws Exception {
         File serijskiFile = new File("laptopi.xml");
-        LaptopDaoSerializableFile dao = new LaptopDaoSerializableFile(serijskiFile);
+        LaptopDaoXMLFile dao = new LaptopDaoXMLFile(serijskiFile);
         for (Laptop laptop : dao.vratiPodatkeIzDatoteke()) {
             System.out.println(laptop);
         }
@@ -78,7 +78,7 @@ class LaptopDaoXMLFileTest {
     public void testGetLaptop() throws Exception {
         File serijskiFile = new File("laptopi.xml");
         if(serijskiFile.exists()){
-            LaptopDaoSerializableFile dao = new LaptopDaoSerializableFile(serijskiFile);
+            LaptopDaoXMLFile dao = new LaptopDaoXMLFile(serijskiFile);
             Laptop trazeni = dao.getLaptop("Intel i5G");
             System.out.println(trazeni.getBrend());
             assertEquals(dao.getLaptop("Intel i5G"), trazeni);

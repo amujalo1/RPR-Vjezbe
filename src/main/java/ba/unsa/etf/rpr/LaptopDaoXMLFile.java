@@ -5,6 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
 
 import javax.management.BadAttributeValueExpException;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -24,9 +25,11 @@ public class LaptopDaoXMLFile implements LaptopDao {
     public void dodajLaptopUFile(Laptop laptop) {
         try{
             XmlMapper xmlMapper = new XmlMapper();
-            xmlMapper.configure(ToXmlGenerator.Feature.WRITE_XML_DECLARATION, true);
             laptopi.add(laptop);
-            xmlMapper.writeValue(file,laptopi);
+            String xml = xmlMapper.writerWithDefaultPrettyPrinter().writeValueAsString(laptopi);
+            FileOutputStream fo = new FileOutputStream(file);
+            fo.write(xml.getBytes());
+            fo.close();
         } catch (IOException e){
             System.out.println("Greska: " + e);
         }
@@ -48,14 +51,14 @@ public class LaptopDaoXMLFile implements LaptopDao {
 
     @Override
     public ArrayList<Laptop> vratiPodatkeIzDatoteke() {
-        //if(file.exists()) {
+        if(file.exists()) {
             try {
                 XmlMapper xmlMapper = new XmlMapper();
                 return xmlMapper.readValue(file,xmlMapper.getTypeFactory().constructCollectionType(ArrayList.class,Laptop.class));
             } catch (IOException e) {
                 System.out.println("Greska: " + e);
             }
-        //}
+        }
         return new ArrayList<>();
     }
 }
