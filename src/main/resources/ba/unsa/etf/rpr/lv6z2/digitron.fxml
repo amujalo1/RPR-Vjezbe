@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="5.0" prefHeight="217.0" prefWidth="141.0" stylesheets="@MainWindowStyle.css" vgap="5.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.lv6z2.Controller">
+
+
+  <Label fx:id="display" maxWidth="1.7976931348623157E308" minWidth="135.0" prefHeight="27.0" prefWidth="144.0" style="-fx-font-size: 18;" styleClass="labelOut" stylesheets="@MainWindowStyle.css" text="" GridPane.columnSpan="4" GridPane.vgrow="ALWAYS" />
+
+  <!-- Drugi red -->
+  <Button minHeight="30.0" minWidth="30.0" onAction="#handleOperatorClick" prefHeight="30.0" prefWidth="30.0" text="\%" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+  <Button minHeight="30.0" minWidth="30.0" onAction="#handleOperatorClick" prefHeight="30.0" prefWidth="30.0" text="/" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+  <Button minHeight="30.0" minWidth="30.0" onAction="#handleOperatorClick" prefHeight="30.0" prefWidth="30.0" text="*" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+  <Button minHeight="30.0" minWidth="30.0" onAction="#handleOperatorClick" prefHeight="30.0" prefWidth="30.0" text="-" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+
+  <!-- Treći red -->
+  <Button fx:id="btn7" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="7" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn8" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="8" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn9" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="9" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="plusBtn" minHeight="70.0" minWidth="30.0" onAction="#handleOperatorClick" prefHeight="70.0" prefWidth="30.0" text="+" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
+
+  <!-- Četvrti red -->
+  <Button fx:id="btn4" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="4" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn5" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="5" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn6" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="6" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+
+  <!-- Peti red -->
+  <Button fx:id="btn1" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="1" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn2" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="btn3" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="3" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="equalsBtn" minHeight="68.0" minWidth="30.0" onAction="#handleEqualsClick" prefHeight="68.0" prefWidth="30.0" styleClass="equals" text="=" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
+
+  <!-- Šesti red -->
+  <Button fx:id="btn0" minHeight="30.0" minWidth="70.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="70.0" text="0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+  <Button fx:id="dotBtn" minHeight="30.0" minWidth="30.0" onAction="#handleDigitClick" prefHeight="30.0" prefWidth="30.0" text="." GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" />
+    <ColumnConstraints hgrow="ALWAYS" />
+    <ColumnConstraints hgrow="ALWAYS" />
+    <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="ALWAYS"/>
+    <RowConstraints vgrow="ALWAYS"/>
+    <RowConstraints vgrow="ALWAYS"/>
+    <RowConstraints vgrow="ALWAYS"/>
+    <RowConstraints vgrow="ALWAYS"/>
+    <RowConstraints vgrow="ALWAYS"/>
+  </rowConstraints>
+</GridPane>
