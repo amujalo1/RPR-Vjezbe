@@ -12,7 +12,6 @@
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/main/resources/ba/unsa/etf/rpr/kalkulator/CalculatorStyle.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/test/java/ba/unsa/etf/rpr/kalkulator/CalculatorControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/test/java/ba/unsa/etf/rpr/kalkulator/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Korisnik.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/Student.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/test/java/ba/unsa/etf/ba/demo/Datum.java" afterDir="false" />
@@ -91,18 +90,10 @@
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/main/resources/ba/unsa/etf/rpr/lv6z2/MainWindowStyle.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/main/resources/ba/unsa/etf/rpr/lv6z2/digitron.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/test/java/ba/unsa/etf/rpr/lv6z2/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P12_logintest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lv8-z5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/MainWindowStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/digitron.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sample/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/sample/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sample/KorisniciModelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/Vektor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,8 +226,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -333,8 +324,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lv6-z1",
-    "last_opened_file_path": "C:/Users/User/Documents/WorkSpace/java projects/P12_logintest/src/sample",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "lv8-z5",
+    "last_opened_file_path": "C:/Users/User/Documents/WorkSpace/java projects/lv7-z1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -357,7 +350,7 @@
       <recent name="sample" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -459,19 +452,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="lv8-z5" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="lv8-z5" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -526,6 +506,7 @@
       <workItem from="1701783352243" duration="25000" />
       <workItem from="1701809345793" duration="607000" />
       <workItem from="1702973356217" duration="3799000" />
+      <workItem from="1702977838134" duration="308000" />
     </task>
     <servers />
   </component>
