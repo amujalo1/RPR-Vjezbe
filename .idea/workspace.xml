@@ -12,28 +12,7 @@
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/main/resources/ba/unsa/etf/rpr/kalkulator/CalculatorStyle.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/test/java/ba/unsa/etf/rpr/kalkulator/CalculatorControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Kalkulator/src/test/java/ba/unsa/etf/rpr/kalkulator/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_testfx_testfx_junit5_4_0_15_alpha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/testfx_junit5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/P12_logintest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/P12_logintest/sample/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/P12_logintest/sample/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/P12_logintest/sample/ControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/MainWindowStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/digitron.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/sample/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Korisnik.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/Student.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/test/java/ba/unsa/etf/ba/demo/Datum.java" afterDir="false" />
@@ -112,6 +91,16 @@
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/main/resources/ba/unsa/etf/rpr/lv6z2/MainWindowStyle.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/main/resources/ba/unsa/etf/rpr/lv6z2/digitron.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../lv6-z2/src/test/java/ba/unsa/etf/rpr/lv6z2/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P12_logintest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lv8-z5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/MainWindowStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/digitron.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sample/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/sample/ControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/ba/unsa/etf/ba/demo/Vektor.java" afterDir="false" />
     </list>
@@ -246,8 +235,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -257,7 +246,8 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -334,28 +324,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lv2-z1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Documents/WorkSpace/java projects/P12_logintest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "lv6-z1",
+    "last_opened_file_path": "C:/Users/User/Documents/WorkSpace/java projects/P12_logintest/src/sample",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\WorkSpace\java projects\P12_logintest\src\sample" />
@@ -367,7 +357,7 @@
       <recent name="sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -388,7 +378,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="P12_logintest" />
+      <module name="lv8-z5" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -409,7 +399,7 @@
       </method>
     </configuration>
     <configuration name="All in P12_logintest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P12_logintest" />
+      <module name="lv8-z5" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -421,7 +411,7 @@
       </method>
     </configuration>
     <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P12_logintest" />
+      <module name="lv8-z5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -439,12 +429,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ControllerTest.startWithNullString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lv8-z5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.ControllerTest" />
+      <option name="METHOD_NAME" value="startWithNullString(org.testfx.api.FxRobot)" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lv8-z5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lv8-z5" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -472,12 +495,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ControllerTest.startWithNullString" />
       <item itemvalue="JUnit.ControllerTest" />
       <item itemvalue="JUnit.All in P12_logintest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ControllerTest" />
+        <item itemvalue="JUnit.ControllerTest.startWithNullString" />
         <item itemvalue="JUnit.All in P12_logintest" />
       </list>
     </recent_temporary>
@@ -499,6 +524,8 @@
       <workItem from="1701779531990" duration="1737000" />
       <workItem from="1701781416916" duration="35000" />
       <workItem from="1701783352243" duration="25000" />
+      <workItem from="1701809345793" duration="607000" />
+      <workItem from="1702973356217" duration="3799000" />
     </task>
     <servers />
   </component>
@@ -579,6 +606,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/sample/ControllerTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/sample/ControllerTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
