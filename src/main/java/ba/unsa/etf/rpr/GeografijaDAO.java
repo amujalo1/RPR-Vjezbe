@@ -87,7 +87,23 @@ public class GeografijaDAO {
 
         return gradovi;
     }
-    // Dodajte novu metodu u GeografijaDAO klasu
+    public void obrisiDrzavu(String drzava) {
+        String deleteGradoviSQL = "DELETE FROM grad WHERE drzava IN (SELECT id FROM drzava WHERE naziv = ?);";
+        String deleteDrzavaSQL = "DELETE FROM drzava WHERE naziv = ?;";
+
+        try (PreparedStatement deleteGradoviStatement = connection.prepareStatement(deleteGradoviSQL);
+             PreparedStatement deleteDrzavaStatement = connection.prepareStatement(deleteDrzavaSQL)) {
+
+            deleteGradoviStatement.setString(1, drzava);
+            deleteGradoviStatement.executeUpdate();
+
+            deleteDrzavaStatement.setString(1, drzava);
+            deleteDrzavaStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     public String glavniGrad(String nazivDrzave) {
         String selectGlavniGradSQL = "SELECT g.naziv FROM grad g, drzava d WHERE g.drzava = d.id AND d.naziv = ? AND d.glavni_grad = g.id;";
 
@@ -103,6 +119,68 @@ public class GeografijaDAO {
         }
 
         return null; // Vrati null ako država nije pronađena
+    }
+    public void dodajGrad(Grad grad) {
+        String insertGradSQL = "INSERT INTO grad (naziv, broj_stanovnika, drzava) VALUES (?, ?, ?);";
+
+        try (PreparedStatement statement = connection.prepareStatement(insertGradSQL)) {
+            statement.setString(1, grad.getNaziv());
+            statement.setInt(2, grad.getBrojStanovnika());
+            statement.setString(3, grad.getDrzava());
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void dodajDrzavu(Drzava drzava) {
+        String insertDrzavaSQL = "INSERT INTO drzava (naziv, glavni_grad) VALUES (?, ?);";
+
+        try (PreparedStatement statement = connection.prepareStatement(insertDrzavaSQL)) {
+            statement.setString(1, drzava.getNaziv());
+            statement.setString(2, drzava.getGlavniGrad());
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    // Metoda koja ažurira pripadajući red u bazi podataka za dati grad
+    public void izmijeniGrad(Grad grad) {
+        String updateGradSQL = "UPDATE grad SET naziv = ?, broj_stanovnika = ?, drzava = ? WHERE naziv = ?;";
+
+        try (PreparedStatement statement = connection.prepareStatement(updateGradSQL)) {
+            statement.setString(1, grad.getNaziv());
+            statement.setInt(2, grad.getBrojStanovnika());
+            statement.setString(3, grad.getDrzava());
+            statement.setString(4, grad.getNaziv());
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Metoda koja vraća državu iz baze podataka ili null ako država ne postoji
+    // Metoda koja vraća državu iz baze podataka ili null ako država ne postoji
+    public Drzava nadjiDrzavu(String drzava) {
+        String selectDrzavaSQL = "SELECT naziv, glavni_grad FROM drzava WHERE naziv = ?;";
+
+        try (PreparedStatement statement = connection.prepareStatement(selectDrzavaSQL)) {
+            statement.setString(1, drzava);
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                return new Drzava(resultSet.getString("naziv"), resultSet.getString("glavni_grad"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 
